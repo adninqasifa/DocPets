@@ -2,7 +2,7 @@
 
 DESCRIPTION :
 
-This is Final Project from Glints Academy.
+This is Final Project from Glints Academy. This is a Mobile Application which created by React Native Team.
 
 DocPets is an Online Health Portal service to link Pet Owner and Veterinary, we provide
 services to Pet Owner and Veterinary to be connected in every city in Indonesia. Mahatma

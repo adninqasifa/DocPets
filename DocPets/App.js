@@ -1,21 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StatusBar, View} from 'react-native';
+import {Provider} from 'react-redux'
+import Stackers from './src/navigation/Stackers';
+import store from './src/store'
 
-const pageSatu = () => {
+const App= () => {
   return (
-    <View style={styles.container}>
-      <Text style={{color: "#FFFFFF"}}>Hello world! Guys</Text>
-    </View>
+    <Provider store={store}>
+      <Stackers/>
+    </Provider>
   );
 };
 
-export default pageSatu;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#343434',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-});
+export default App;

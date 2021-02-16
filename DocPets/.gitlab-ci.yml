@@ -1,0 +1,18 @@
+---
+build-job:
+  script:
+    - "echo \"Hello World\""
+  stage: build
+deploy-job:
+  script:
+    - "echo \"Hello Deploy\""
+  stage: deploy
+image: "node:14.15.0"
+stages:
+  - build
+  - test
+  - deploy
+test-job:
+  script:
+    - "echo \"npm test\""
+  stage: test
